@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailwind first</title>
+  </head>
+  <body class="antialiased text-slate-600">
+    <section class="px-8 md:px-16 flex flex-col max-w-screen-2xl min-h-screen">
+      <header class="py-8">
+        <a href="#">
+          <img src="/src//images//logo.png" class="h-7" alt="Yours" />
+        </a>
+      </header>
+      <section class="flex p-12 lg:flex-row md:py-20 flex-col gap-20">
+        <!-- Description section begins -->
+        <section class="flex-1">
+          <h1 class="font-semibold text-6xl leading-tight text-slate-800">
+            Join us at the future leaderConf
+          </h1>
+          <p class="mt-5 text-violet-500 text-lg">
+            April 2024 - Addis Ababa, Ethiopia
+          </p>
+          <p class="mt-3 text-lg">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            eius beatae distinctio unde excepturi. Natus voluptatibus
+            consequuntur earum mollitia eveniet vel alias amet iure! Ipsam
+            eligendi possimus dolorum neque autem!
+          </p>
+        </section>
+        <!-- Subscribe section begines -->
+        <section class="flex-1">
+          <div class="bg-gray-100 shadow-xl rounded-lg max-w-lg">
+            <!-- first div -->
+            <div
+              class="bg-violet-500 p-8 text-white grid place-items-center rounded-t-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                data-slot="icon"
+                class="h-12 w-12"
+              >
+                <path
+                  d="M19.5 22.5a3 3 0 0 0 3-3v-8.174l-6.879 4.022 3.485 1.876a.75.75 0 1 1-.712 1.321l-5.683-3.06a1.5 1.5 0 0 0-1.422 0l-5.683 3.06a.75.75 0 0 1-.712-1.32l3.485-1.877L1.5 11.326V19.5a3 3 0 0 0 3 3h15Z"
+                />
+                <path
+                  d="M1.5 9.589v-.745a3 3 0 0 1 1.578-2.642l7.5-4.038a3 3 0 0 1 2.844 0l7.5 4.038A3 3 0 0 1 22.5 8.844v.745l-8.426 4.926-.652-.351a3 3 0 0 0-2.844 0l-.652.351L1.5 9.589Z"
+                />
+              </svg>
+            </div>
+
+            <!-- second div  -->
+            <div class="p-10">
+              <p class="font-serif">Get notified of all the updates</p>
+              <form action="#" class="flex max-sm:flex-col gap-3 mt-3">
+                <input
+                  type="email"
+                  class="border flex-grow border-gray-300 px-4 py-2 rounded-md hover:border-violet-400 focus:outline-none focus:border-violet-500"
+                  placeholder="Email Address"
+                />
+                <button
+                  class="bg-violet-400 px-4 hover:bg-violet-900 py-2 rounded-md text-white font-semibold font-serif"
+                >
+                  Notify me
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Subscribe section ends -->
+      </section>
+
+      <footer class="py-8 mt-auto">
+        <ul class="flex gap-6 text-sm text-slate-400 justify-center">
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
